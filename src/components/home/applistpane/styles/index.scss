@@ -1,0 +1,8 @@
+.applist__pane{
+    min-height: 100vh;
+    background: #F7F7F7;
+
+    @media screen and (max-width:720px) {
+        min-height: 0;
+    }
+}

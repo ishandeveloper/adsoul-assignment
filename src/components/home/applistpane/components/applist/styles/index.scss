@@ -1,0 +1,27 @@
+.applist__wrapper {
+  width: 90%;
+  margin: auto;
+
+  height: calc(100vh - 148px);
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e8e8e8;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  @media screen and (max-width: 720px) {
+    height: calc(50vh - 12px);
+    width: 100%;
+  }
+
+  a {
+    color: black !important;
+  }
+}

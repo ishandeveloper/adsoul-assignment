@@ -1,0 +1,66 @@
+.left__pane {
+  min-height: 100vh;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  @media screen and (max-width: 720px) {
+    min-height: fit-content;
+    height: auto;
+  }
+
+  .left__hero {
+    padding: 2rem 2rem 0rem 2rem;
+    flex: 1;
+    background: #7164ff;
+
+    @media screen and (max-width: 720px) {
+      padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .left__logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: white;
+      letter-spacing: 0.25rem;
+    }
+
+    .left__img__wrapper {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      @media screen and (max-width: 720px) {
+        margin-top: 2rem;
+      }
+
+      > img {
+        width: 50%;
+
+        @media screen and (max-width: 720px) {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  .left__icons__wrapper {
+    flex: 1;
+    background: #6156dc;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+
+    @media screen and (max-width: 720px) {
+      display: none;
+    }
+
+    .left__title {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .icons__container{
+        margin-top: 1rem;
+    }
+  }
+}
